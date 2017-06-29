@@ -16,6 +16,7 @@ extern NSString* const OEXAnalyticsKeySupported;
 extern NSString* const OEXAnalyticsKeyThreadID;
 extern NSString* const OEXAnalyticsKeyTopicID;
 extern NSString* const OEXAnalyticsKeyResponseID;
+extern NSString* const OEXAnalyticsKeyAuthor;
 extern NSString* const OEXAnalyticsKeyQueryString;
 
 // TODO rename these to be more like the above

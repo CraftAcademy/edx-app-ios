@@ -16,6 +16,7 @@ NSString* const OEXAnalyticsKeySupported = @"supported";
 NSString* const OEXAnalyticsKeyThreadID = @"thread_id";
 NSString* const OEXAnalyticsKeyTopicID = @"topic_id";
 NSString* const OEXAnalyticsKeyResponseID = @"response_id";
+NSString* const OEXAnalyticsKeyAuthor = @"author";
 NSString* const OEXAnalyticsKeyQueryString = @"query_string";
 
 NSString* const OEXAnalyticsEventAnnouncementNotificationReceived = @"edx.bi.app.notification.course.update.received";
