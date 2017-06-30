@@ -201,9 +201,9 @@ public class DiscussionNewCommentViewController: UIViewController, UITextViewDel
     private func logScreenEvent(){
         switch context {
         case let .Thread(thread):
-            self.environment.analytics.trackDiscussionScreen(withName: OEXAnalyticsScreenAddThreadResponse, courseId: self.courseID, value: thread.title, threadId: thread.threadID, topicId: thread.topicId, responseID: nil, author: thread.title)
+            self.environment.analytics.trackDiscussionScreen(withName: OEXAnalyticsScreenAddThreadResponse, courseId: self.courseID, value: thread.title, threadId: thread.threadID, topicId: thread.topicId, responseID: nil, author: nil)
         case let .Comment(comment):
-            self.environment.analytics.trackDiscussionScreen(withName: OEXAnalyticsScreenAddResponseComment, courseId: self.courseID, value: thread?.title, threadId: comment.threadID, topicId: nil, responseID: comment.commentID, author: comment.author)
+            self.environment.analytics.trackDiscussionScreen(withName: OEXAnalyticsScreenAddResponseComment, courseId: self.courseID, value: thread?.title, threadId: comment.threadID, topicId: nil, responseID: comment.commentID, author: nil)
         }
         
     }
